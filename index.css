@@ -1,0 +1,158 @@
+:root {
+    --navBarColor: #e76f51;
+    --navBarColorH: #f4a261;
+    --navFontColor: #ffffff;
+    --navBtnColor: #2a9d8f;
+    --navBtnFont: #ffffff;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    /* border: 2px solid black; */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: var(--navBarColor);
+    color: var(--navFontColor);
+    width: 100%;
+}
+
+.brand {
+    /* border: 2px solid black; */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 15%;
+    cursor: default;
+}
+
+.brand img {
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    filter: invert(100%);
+
+}
+
+.brand p {
+    margin: 10px;
+    padding: 0px;
+    font-size: 25px;
+
+}
+
+.navItem {
+    /* border: 2px solid black; */
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.navItem li {
+    /* border: 2px solid black; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.navItem li button {
+    border: none;
+    margin: 0px;
+    padding: 20px;
+    background-color: inherit;
+    color: inherit;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navItem li button:hover {
+    /* border: 2px solid black; */
+    background-color: var(--navBarColorH);
+}
+
+.navItem li button:active {
+    /* border: 2px solid black; */
+    /* background-color: var(--navBarColorH); */
+    color: black;
+}
+
+.action {
+    /* border: 2px solid black; */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 20%;
+}
+
+.action button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--navBtnColor);
+    color: var(--navBtnFont);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.action button:hover {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--navBtnColor);
+    color: var(--navBtnFont);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.imgBg {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+    justify-content: center;
+}
+
+.artical {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    
+}
+
+#posterBG {
+    width: 100%;
+    height: 99vh;
+    filter: blur(3px);
+    position: absolute;
+}
+
+#poster {    
+    align-items: center;
+    height: 99vh;
+}
+
+.box1, .box2 {
+    margin: 100px 20px;
+}
