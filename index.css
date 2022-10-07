@@ -141,6 +141,7 @@ body {
     position: absolute;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #posterBG {
@@ -152,14 +153,20 @@ body {
 
 #poster {
     /* align-items: center; */
-    height: 90vh;
+    width: 70%;
     padding-top: 50px;
 }
 
 .box1, .box2 {
+    width: 15%;
     padding: 0px 5px;
     margin-bottom: 200px;
     color: var(--navBarColor);
     text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 5px;
     font-size: 15px;
+    text-align: center;
+}
+.box2 li {
+    text-align: left;
+    font-size: 16px;
 }
